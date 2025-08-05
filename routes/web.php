@@ -26,7 +26,6 @@ use App\Http\Controllers\Api\AbsensiApiController;
 |
 */
 
-<<<<<<< HEAD
 // ==================== GURU ====================
 Route::get('/welcome', function () {
     return view('welcome');
@@ -35,12 +34,6 @@ Route::get('/welcome', function () {
 Route::get('/guru-dashboard', function () {
     return view('guru.dashboardguru');
 })->name('guru.dashboard');
-=======
-// Root redirect
-Route::get('/', function () {
-    return redirect()->route('login');
-});
->>>>>>> 9bad73f477b7703dafda8278f7da9209bab2845b
 
 /*
 |--------------------------------------------------------------------------
@@ -60,7 +53,7 @@ Route::post('/logout', [LogoutController::class, 'logout'])->name('logout')->mid
 |--------------------------------------------------------------------------
 */
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth', 'role:Super Admin']], function () {
-    
+
     // Dashboard
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/dashboard/monthly-stats', [DashboardController::class, 'getMonthlyStats'])->name('dashboard.monthly-stats');
@@ -192,7 +185,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth', 'r
 |--------------------------------------------------------------------------
 */
 Route::group(['prefix' => 'guru', 'as' => 'guru.', 'middleware' => ['auth', 'role:Admin,Guru Matapelajaran,Walikelas,Kesiswaan']], function () {
-    
+
     // Dashboard Guru
     Route::get('/dashboard', [GuruDashboardController::class, 'index'])->name('dashboard');
     Route::get('/dashboard/my-stats', [GuruDashboardController::class, 'getMyStats'])->name('dashboard.my-stats');
@@ -222,7 +215,7 @@ Route::group(['prefix' => 'guru', 'as' => 'guru.', 'middleware' => ['auth', 'rol
 |--------------------------------------------------------------------------
 */
 Route::group(['prefix' => 'api/v1', 'as' => 'api.', 'middleware' => 'auth:sanctum'], function () {
-    
+
     // Absensi API
     Route::group(['prefix' => 'absensi', 'as' => 'absensi.'], function () {
         Route::post('/scan', [AbsensiApiController::class, 'scanQR'])->name('scan');
@@ -253,7 +246,7 @@ Route::group(['prefix' => 'public'], function () {
         // Generate QR Code untuk siswa
         return response()->view('public.qr-code', compact('nis'));
     })->name('public.qr');
-    
+
     Route::get('/check-qr/{data}', [AbsensiApiController::class, 'checkQRData'])->name('public.check-qr');
 });
 
