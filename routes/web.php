@@ -11,6 +11,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 // ==================== GURU ====================
+Route::get('/welcome', function () {
+    return view('welcome');
+})->name('welcome');
+
 Route::get('/guru-dashboard', function () {
     return view('guru.dashboardguru');
 })->name('guru.dashboard');
