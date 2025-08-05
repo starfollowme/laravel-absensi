@@ -26,7 +26,7 @@ use App\Http\Controllers\Api\AbsensiApiController;
 |
 */
 
-<<<<<<< HEAD
+
 // ==================== GURU ====================
 Route::get('/welcome', function () {
     return view('welcome');
@@ -40,7 +40,7 @@ Route::get('/guru-dashboard', function () {
 Route::get('/', function () {
     return redirect()->route('login');
 });
->>>>>>> 9bad73f477b7703dafda8278f7da9209bab2845b
+
 
 /*
 |--------------------------------------------------------------------------
