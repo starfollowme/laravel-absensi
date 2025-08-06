@@ -144,49 +144,49 @@
   <body>
     <div class="container">
       <div class="header">
-        <img src="img/vector-0.svg" alt="Back" />
+        <img src="img/panah.png" alt="Back" />
         <div class="header-title">e-Absen Sebelas</div>
-        <img src="img/rectangle-110.png" alt="Logo" />
+        <img src="img/logo11.png" alt="Logo" />
       </div>
 
-      <img src="img/rectangle-124.png" alt="Checkmark" class="checkmark" />
+      <img src="img/ceklisijo.png" alt="Checkmark" class="checkmark" />
 
       <div class="content">
         <div class="title">Detail Absen</div>
         <div class="status">Hadir</div>
 
         <div class="info-item">
-          <img src="img/vector-58.svg" alt="icon" />
+          <img src="img/nis.png" alt="icon" />
           <div class="info-label">NIS</div>
           <div class="info-value">000000000</div>
         </div>
 
         <div class="info-item">
-          <img src="img/vector.svg" alt="icon" />
+          <img src="img/nama.png" alt="icon" />
           <div class="info-label">Nama</div>
           <div class="info-value">Siti Ropeah</div>
         </div>
 
         <div class="info-item">
-          <img src="img/kelas-removebg-preview-1.png" alt="icon" />
+          <img src="img/kelas.png" alt="icon" />
           <div class="info-label">Kelas</div>
           <div class="info-value">XII RPL 2</div>
         </div>
 
         <div class="info-item">
-          <img src="img/jam-removebg-preview-1.png" alt="icon" />
+          <img src="img/waktu.png" alt="icon" />
           <div class="info-label">Waktu</div>
           <div class="info-value">06.30.17</div>
         </div>
 
         <div class="info-item">
-          <img src="img/date-range-fill.svg" alt="icon" />
+          <img src="img/tanggal.png" alt="icon" />
           <div class="info-label">Tanggal</div>
           <div class="info-value">20-11-2026</div>
         </div>
 
         <div class="info-item">
-          <img src="img/s-removebg-preview-1.png" alt="icon" />
+          <img src="img/status.png" alt="icon" />
           <div class="info-label">Status</div>
           <div class="info-value">Hadir</div>
         </div>
@@ -198,11 +198,11 @@
 
       <div class="bottom-nav">
         <div class="nav-item active">
-          <img src="img/vector-0-3.svg" alt="Beranda" />
+          <img src="img/beranda.png" alt="Beranda" />
           Beranda
         </div>
         <div class="nav-item">
-          <img src="img/vector-0-2.svg" alt="Profil" />
+          <img src="img/guru.png" alt="Profil" />
           Profil
         </div>
       </div>
