@@ -14,7 +14,7 @@
 
       html,
       body {
-        margin: 0px;
+        margin: 0;
         height: 100%;
         font-family: 'Poppins', sans-serif;
       }
@@ -158,10 +158,9 @@
         color: #000;
       }
 
-      .overlap {
+      .overlap,
+      .overlap-group {
         position: absolute;
-        top: 538px;
-        left: 215px;
         width: 164px;
         height: 93px;
         background-color: #d1e1fb;
@@ -170,35 +169,33 @@
         box-shadow: 0px 4px 4px #00000040;
       }
 
-      .riwayat-absensi {
-        position: absolute;
-        top: 22px;
-        left: 21px;
-        font-size: 20px;
-        font-weight: 600;
-        text-align: center;
-        color: #000;
+      .overlap {
+        top: 538px;
+        left: 215px;
       }
 
       .overlap-group {
-        position: absolute;
         top: 538px;
         left: 31px;
-        width: 164px;
-        height: 93px;
-        background-color: #d1e1fb;
-        border-radius: 7px;
-        border: 1px solid #d1e2fb;
-        box-shadow: 0px 4px 4px #00000040;
       }
 
-      .text-wrapper {
+      .text-wrapper,
+      .riwayat-absensi {
         position: absolute;
-        top: 20px;
-        left: 69px;
         font-size: 20px;
         font-weight: 600;
         color: #000;
+      }
+
+      .text-wrapper {
+        top: 24px;
+        left: 75px;
+      }
+
+      .riwayat-absensi {
+        top: 24px;
+        left: 75px;
+        text-align: left;
       }
 
       .text-wrapper-6 {
@@ -224,23 +221,35 @@
       }
 
       .depth-frame .icon {
-        text-align: center;
-        color: #607789;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         font-size: 12px;
+        color: #607789;
       }
 
-      .icon img {
-        width: 20px;
-        height: 20px;
+      .depth-frame .icon img {
+        height: 28px;
+        width: auto;
         margin-bottom: 4px;
+        object-fit: contain;
       }
 
+      .icon-card {
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: 22px;
+        left: 16px;
+      }
     </style>
   </head>
 
   <body>
     <div class="dashboard-guru-mapel">
       <div class="div">
+
         <!-- HEADER -->
         <div class="depth-frame-4">
           <div class="text-wrapper-10">e-Absen Sebelas</div>
@@ -262,11 +271,7 @@
 
         <!-- PROFIL GURU -->
         <div class="overlap-2">
-          <img
-            class="ellipse"
-            src="img/foto-michael.jpg"
-            alt="Foto Guru"
-          />
+          <img class="ellipse" src="img/foto-michael.jpg" alt="Foto Guru" />
           <div class="text-wrapper-2">Michael Saputra</div>
           <div class="text-wrapper-3">84023456789</div>
         </div>
@@ -276,11 +281,13 @@
 
         <!-- KARTU 1 -->
         <div class="overlap-group">
+          <img src="img/absen-icon.png" alt="Icon Absen Hari Ini" class="icon-card" />
           <div class="text-wrapper">Absen Hari ini</div>
         </div>
 
         <!-- KARTU 2 -->
         <div class="overlap">
+          <img src="img/riwayat-icon.png" alt="Icon Riwayat Absensi" class="icon-card" />
           <div class="riwayat-absensi">Riwayat<br />Absensi</div>
         </div>
 
@@ -295,6 +302,7 @@
             <div>Profil</div>
           </div>
         </div>
+
       </div>
     </div>
   </body>
